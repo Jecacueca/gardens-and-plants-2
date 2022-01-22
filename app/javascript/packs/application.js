@@ -12,3 +12,11 @@ import 'bootstrap';
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// Import the function
+import { initSelect2 } from "../plugins/init_select2";
+
+// Call the function
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
+})
